@@ -1,0 +1,15 @@
+html,
+body {
+  height: 100%;
+}
+
+body {
+  background: #ffffff;
+  font-family: "Montserrat", serif;
+  font-size: 2rem;
+  font-style: normal;
+  font-weight: normal;
+  line-height: 1.8;
+  color: #000000;
+  position: relative;
+}
