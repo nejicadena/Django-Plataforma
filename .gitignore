@@ -1,3 +1,4 @@
 # Pycahche
-/core/__pycache__
-/registration/__pycache__
+core/__pycache__
+registration/__pycache__
+mk/__pycache__
