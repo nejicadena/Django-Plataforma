@@ -1,12 +1,27 @@
 
 {% load static %}
-{% block title %}Iniciar sesión{% endblock %}
+{% block title %}{% endblock %}
 {% block content %}
 <style>.errorlist{color:red;}</style>
-<main role="main">
-  <div class="container">
-    <div class="row mt-3">
-      <div class="col-md-9 mx-auto mb-5">
+<link rel="stylesheet" href="{% static 'core/vendor/css/bootstrap.min.css' %}" rel="stylesheet">
+
+    <!-- mobile specific metas
+    ================================================== -->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- CSS
+    ================================================== -->
+    <link rel="stylesheet" href="{% static 'core/css/registro.css'%}">
+
+    <!-- script
+    ================================================== -->
+    <script src="{% static 'core/js/modernizr.js' %}%"></script>
+<div class='bold-line'></div>
+<div class='container'>
+  <div class='window'>
+    <div class='overlay'></div>
+    <div class='content'>
+      <div class='welcome'>¡Bienvenido!</div>
       {% if 'registrer' in request.GET %}
       <p style="color:green;"> Usuario registrado correctamente </p>
       {% endif %}
@@ -16,17 +31,19 @@
             <p style="color:red">Usuario o contraseña incorrectos, prueba de nuevo.</p>
           {% endif %}
           <p>
-            <input type="text" name="username" autofocus maxlength="254" required
-              id="id_username" class="form-control" placeholder="Nombre de usuario"/>
+            <input type="text" class='input-line full-width' name="username" autofocus maxlength="254" required
+              id="id_username" class="form-control" placeholder="Nombre de Usuario"/>
           </p>
           <p>
-            <input type="password" name="password" required
+            <input type="password" class='input-line full-width' name="password" required
               id="id_password" class="form-control" placeholder="Contraseña"/>
           </p>
-          <p><input type="submit" class="btn btn-primary btn-block" value="Acceder"></p>
+          <p><input type="submit" class='ghost-round full-width' value="Acceder"></p>
         </form>
-      </div>
+      
+      <div><button class='ghost-round full-width' href="{% url 'signup' %}">Crear Cuenta</button></div>
+    </a>
     </div>
   </div>
-</main>
+</div>
 {% endblock %}
