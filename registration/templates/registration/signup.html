@@ -1,6 +1,6 @@
 
 {% load static %}
-{% block title %}Registro{% endblock %}
+{% block title %}{% endblock %}
 {% block content %}
 <style>.errorlist{color:red;} label{display:none}</style>
 
@@ -23,31 +23,24 @@
   <div class='window'>
     <div class='overlay'></div>
     <div class='content'>
-      <div class='welcome'>Accede a tu cuenta</div>
+      <div class='welcome'>Crea una cuenta</div>
       
       <div class='input-fields'>
-        <input type='email' placeholder='Email' class='input-line full-width'></input>
-        <input type='password' placeholder='Contraseña' class='input-line full-width'></input>
+      <form action="" method="post">{% csrf_token %}
+        
+        {{form.username}}
+        {{form.email}}       
+        {{form.password1}}
+        {{form.password2}}
       </div>
       <div class='spacing'> continua con <span class='facebook'>Facebook</span></div>
       <div class='spacing'> continua con <span class='google'>Google</span></div>
       <a href="makerplace.html">
-      <div><button class='ghost-round full-width'>Acceder</button></div>
+      <div><input type="submit" class='ghost-round full-width' value="Enviar" ></div>
     </a>
+    </form>
     </div>
   </div>
 </div>
-<main role="main">
-  <div class="container">
-    <div class="row mt-3">
-      <div class="col-md-9 mx-auto mb-5">
-        <form action="" method="post">{% csrf_token %}
-          <h3 class="mb-4">Registro</h3>
-          {{form.as_p}}
-          <p><input type="submit" class="btn btn-primary btn-block" value="Confirmar"></p>
-        </form>
-      </div>
-    </div>
-  </div>
-</main>
+
 {% endblock %}
