@@ -77,8 +77,12 @@ WSGI_APPLICATION = 'mk.wsgi.application'
 
 DATABASES = {
     'default': {
-        'ENGINE': 'django.db.backends.sqlite3',
-        'NAME': os.path.join(BASE_DIR, 'db.sqlite3'),
+        'ENGINE': 'django.db.backends.postgresql',
+        'NAME': 'MFDB',
+        'USER': 'MF23',
+        'PASSWORD': 'c0ntr45MF23',
+        'HOST': 'mf-db.cepl0wjy7svr.us-east-2.rds.amazonaws.com',
+        'PORT': 5432,
     }
 }
 
