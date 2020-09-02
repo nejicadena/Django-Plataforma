@@ -1,8 +1,9 @@
 from django.urls import path
-from .views import SingUpView
+from .views import SingUpView, ProfileUpdate
 
 urlpatterns = [
     
-    path('' ,SingUpView.as_view(), name ='signup'),
+    path('signup/' ,SingUpView.as_view(), name ='signup'),
+    path('profile/', ProfileUpdate.as_view(), name="profile"),
 
 ]

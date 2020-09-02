@@ -127,5 +127,5 @@ STATIC_URL = '/static/'
 
 # Auth redirects
 
-LOGIN_REDIRECT_URL = ''
+#LOGIN_REDIRECT_URL = 'home'
 LOGOUT_REDIRECT_URL = 'home'
