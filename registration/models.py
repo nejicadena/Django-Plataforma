@@ -18,3 +18,24 @@ class Profile(models.Model):
     class Meta:
         ordering = ['user__username']
 
+class Profilephoto(models.Model):
+    id_photo = models.IntegerField(primary_key=True)
+    picture_location = models.CharField(max_length=500, blank=True, null=True)
+
+    class Meta:
+        managed = False
+        db_table = 'profilephoto'
+
+
+""" Conflicto authUser """
+# class RegistrationProfile(models.Model):
+#     avatar = models.CharField(max_length=100, blank=True, null=True)
+#     nombre = models.CharField(max_length=50, blank=True, null=True)
+#     apellido = models.CharField(max_length=50, blank=True, null=True)
+#     fecha = models.DateField(blank=True, null=True)
+#     direcccion = models.TextField(blank=True, null=True)
+#     user = models.OneToOneField(AuthUser, models.DO_NOTHING)
+
+#     class Meta:
+#         managed = False
+#         db_table = 'registration_profile'       
