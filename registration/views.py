@@ -3,6 +3,7 @@ from django.views.generic import CreateView
 from django.views.generic.edit import UpdateView
 from django.utils.decorators import method_decorator
 from django.contrib.auth.decorators import login_required
+from django.shortcuts import render
 from django.urls import reverse_lazy
 from django import forms
 from .forms import UserCreationFormWithEmail
@@ -37,3 +38,12 @@ class ProfileUpdate(UpdateView):
         #Recuperar el objeto que se va a editar
         profile, created = Profile.objects.get_or_create(user=self.request.user)
         return profile
+
+def login(request):
+	#if request.method == 'POST':
+	return render(request, 'registration/login.html')
+
+
+def registration(request):
+	#if request.method == 'POST':
+	return render(request, 'registration/registro.html')
