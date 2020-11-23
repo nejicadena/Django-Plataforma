@@ -1,5 +1,11 @@
 from django.shortcuts import render
+from django.views.generic.base import TemplateView 
+
 
 # Create your views here.
-def home(request):
-    return render(request,"market/marketplace.html")
+class MarketPageView(TemplateView):
+    
+    template_name= "market/marketplace.html"
+
+
+
