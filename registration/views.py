@@ -1,4 +1,5 @@
 from django.contrib.auth.forms import UserCreationForm
+from django.views.generic.base import TemplateView
 from django.views.generic import CreateView
 from django.views.generic.edit import UpdateView
 from django.utils.decorators import method_decorator
@@ -39,11 +40,17 @@ class ProfileUpdate(UpdateView):
         profile, created = Profile.objects.get_or_create(user=self.request.user)
         return profile
 
-def login(request):
-	#if request.method == 'POST':
-	return render(request, 'registration/login.html')
+# def login(request):
+# 	#if request.method == 'POST':
+# 	return render(request, 'registration/login.html')
 
 
-def registration(request):
-	#if request.method == 'POST':
-	return render(request, 'registration/registro.html')
+# def registration(request):
+# 	#if request.method == 'POST':
+# 	return render(request, 'registration/registro.html')
+
+class preferenciasView(TemplateView):
+    template_name = "registration/preferencias.html"
+   
+class perfilView(TemplateView):
+    template_name = "registration/perfil.html"
