@@ -7,7 +7,28 @@
 
 </head>
 <body>
-<!-- partial:index.partiaaaaal.html -->
+<!-- agregar menu hamburguesa mich 14-12-2020 -->
+<nav role="navigation">
+  <div id="menuToggle">
+<input type="checkbox" />
+<span></span>
+    <span></span>
+    <span></span>
+<ul id="menu">
+      <a href="#"><li>Makerplace</li></a>
+      <a href="#"><li>Perfil</li></a>
+      <a href="#"><li>Mis proyectos</li></a>
+      <a href="#"><li>Nuevo proyecto</li></a>
+      <a href="#"><li>Soporte</li></a>
+      <a href="#"><li>Ajustes</li></a>
+      <a href="{% url 'logout' %}"><li>Cerras sesión</li></a>
+      
+    </ul>
+  </div>
+</nav>
+
+
+  <!-- partial:index.partiaaaaal.html -->
 <div class="container">
   <div id="title">
     <h2>Editar mi perfil</h2>    
