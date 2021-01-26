@@ -42,12 +42,13 @@
         <h3>Fecha de nacimiento</h3>
 				<input type="date" class="col-md-6" >
 				<h3>Género</h3>
-        <input type="radio" name="hm" value="h" required> Hombre
-  <input type="radio" name="hm" value="m" required> Mujer
+        <input type="checkbox" name="hm" value="h" required> Hombre
+  <input type="checkbox" name="hm" value="m" required> Mujer
 				<input type="text1" class="col-md-6" placeholder="Otro">
-        <h3>Direcciónn</h3>
-				<input type="text" class="col-md-6" ><br>
-        <a href="{% url 'preferencias' %}">
+        <h3>Dirección</h3>
+        <textarea name="textarea" id="textarea" placeholder="   Estado "></textarea><br>
+
+        <a href="{% url  'preferencias'%}">
 				<input type="button" class="col-md-6" value="Seguir">		
         </a>	
 			</form>
