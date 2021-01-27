@@ -22,13 +22,13 @@
       <a href="../../../profiles/templates/profiles/nuevoproyecto.html"><li>Nuevo proyecto</li></a>
       <a href="#"><li>Soporte</li></a>
       <a href="#"><li>Ajustes</li></a>
-      <a href="#"><li>Cerrar sesión</li></a>
+      <a href="{% url 'logout' %}"><li>Cerrar sesión</li></a>
       
     </ul>
   </div>
 </nav>
 
-   <header>¡Bienvenido Mogu!</header>
+   <header>¡Bienvenid@ {{user.get_username}} !</header>
    <h1>Necesitamos conocerte para brindarte la mejor experiencia </h1>
    <h2>¿EMPEZAMOS?</h2>
 
@@ -36,7 +36,7 @@
         <section class="card-section">                 
                          <div class="card-front">
                              <div class="card-front__tp">   
-                             <a href="editarperfil.html">                                                                     
+                             <a href="{% url 'profile' %}">                                                                     
                                <h2 class="card-front__heading" align="text-center">
                                 Crea tu perfil</h2>
                               </a>
@@ -46,7 +46,7 @@
         <section class="card-section">
                 <div class="card-front">
                    <div class="card-front__tp">
-                                <a href="preferencias.html">                              
+                                <a href="{% url 'preferencias' %}">                              
                                <h2 class="card-front__heading" align="text-center">
                                 Cuentanos sobre ti
                                   </h2>
@@ -59,7 +59,7 @@
         <section class="card-section">
                          <div class="card-front">
                              <div class="card-front__tp">
-                            <a href="marketplace.html">
+                            <a href="{% url 'market' %}">
                                <h2 class="card-front__heading" align="text-center">
                                 Empieza a explorar
                                   </h2>

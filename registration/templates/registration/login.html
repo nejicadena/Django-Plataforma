@@ -11,18 +11,18 @@
 <!-- partial:index.partial.html -->
 <div class="container">
   <div id="title">
-    <img src="images/logos/mf.png"  height="200" width="200" style="padding-top: 2rem;">
+    <img src="{% static 'core/img/LOGOS/mf.png' %}"  height="200" width="200" style="padding-top: 2rem;">
      {% if 'register' in request.GET %}
           <p style="color:green;">Usuario registrado correctamente, ya puedes identificarte.</p>
         {% endif %}
     <h2>Accede a tu cuenta</h2>    
   </div>
   <div class="form col-md-12">
-      <form action="" method="post">{% csrf_token %}>   
+      <form action="" method="post">{% csrf_token %}   
       {% if form.non_field_errors %}
             <p style="color:red">Usuario o contraseña incorrectos, prueba de nuevo.</p>
         {% endif %} 
-        <h3>Email</h3>
+        <h3>Nombre de Usuario</h3>
         <input type='text' placeholder='Nombre de usuario' required name="username" class="col-md-6" >
         <h3>Contraseña</h3>
         <input type='password' placeholder='Contraseña' required name="password" id="id_password" class="col-md-6" >

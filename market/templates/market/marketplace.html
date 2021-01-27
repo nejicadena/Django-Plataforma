@@ -27,7 +27,7 @@
           <a href="#"><li>Nuevo proyecto</li></a>
           <a href="#"><li>Soporte</li></a>
           <a href="#"><li>Ajustes</li></a>
-          <a href="#"><li>Cerras sesión</li></a>
+          <a href="{% url 'logout' %}"><li>Cerras sesión</li></a>
           
         </ul>
       </div>
@@ -35,7 +35,7 @@
     
     
         <div class="page-header">
-            <h6>¿Qué haremos hoy Mogu?</h6>
+            <h6>¿Qué haremos hoy {{user.get_username}}?</h6>
         </div>
     </section>
     <section class="card-area" style="background-color:#000000" >
@@ -45,7 +45,7 @@
                 <article class="material-card Red">
                     <h2>
                         <span>
-                            <a href="{% url 'MC.html' %}">
+                            <a href="{% url 'home' %}">
                         MiCochinito.com
                         </a> 
                     </span>
@@ -66,7 +66,7 @@
                         <i class="fa fa-bars"></i>
                     </a>
                     <div class="mc-footer">
-                        <a href="{% url 'MC.html' %}">                                                                     
+                        <a href="{% url 'home' %}">                                                                     
                         <button class="btn">Ver más</button>
                         </a>                  
                     </div>

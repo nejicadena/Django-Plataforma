@@ -56,7 +56,7 @@
                 <li class="current"><a href="nosotros.html" title="Home">Nosotros</a></li>
                 <li><a href="registro.html" title="About">Makers</a></li>
                 <li><a href="friends.html" title="Services">Friends</a></li>
-                <li><a href="contact.html" title="Contact us">Contacto</a></li>	
+                <li><a href="{% url 'contacto' %}" title="Contact us">Contacto</a></li>	
             </ul>
         </nav>
 
@@ -66,7 +66,7 @@
 
     <!-- hero
     ================================================== -->
-    <section class="s-hero" data-parallax="scroll" data-image-src="images/desarmador.jpg" data-natural-width=4000 data-natural-height=3500 data-position-y=top>
+    <section class="s-hero" data-parallax="scroll" data-image-src="{% static 'core/img/desarmador.jpg' %}" data-natural-width=4000 data-natural-height=3500 data-position-y=top>
 
         <div class="row hero-content">
 
@@ -113,7 +113,7 @@
 
    <section class="card-sm__container">
     <div class="col-md-6">
-    <!--- START: CARD --->
+    <!--- START: CARD -->
     <section class="card-sm">
 
       
@@ -180,7 +180,7 @@
   <h7> CREA HASTA QUE TODOS CREAN</h7>
   <ul class="footer_end">
   <li class="glitch-item">
-    <a>Términos y condiciones</a>
+    <a href="{% url 'tyc' %}">Términos y condiciones</a>
   </li>
   <li class="glitch-item">
     <a>Privacidad</a>
@@ -189,7 +189,7 @@
     <a>Nosotros</a>
   </li>
   <li class="glitch-item">
-    <a>Contacto</a>
+    <a href="{% url 'contacto' %}">Contacto</a>
   </li>
 </footer>
 
