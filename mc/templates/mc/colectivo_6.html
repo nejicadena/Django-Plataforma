@@ -16,7 +16,7 @@
     <span></span>
     <span></span>
 <ul id="menu">
-      <a href="#"><li>Makerplace</li></a>
+      <a href="{% url 'market' %}"><li>Makerplace</li></a>
       <a href="miperfil.html"><li>Perfil</li></a>
       <a href="#"><li>Mis proyectos</li></a>
       <a href="nuevoproyecto.html"><li>Nuevo proyecto</li></a>
@@ -63,7 +63,8 @@ Puedes guiarte del siguiente ejemplo:
 </div>
 
   <script src='https://code.jquery.com/jquery-2.2.4.min.js'></script>
-<script src='https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.11.4/jquery-ui.min.js'></script><script  src="js/calendar.js"></script>
+<script src='https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.11.4/jquery-ui.min.js'></script>
+<script  src="{% static 'core/js/calendar.js'%}"></script>
 
 <section class="calendar">
       <div class="calendar__header">

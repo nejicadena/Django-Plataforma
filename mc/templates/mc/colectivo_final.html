@@ -17,7 +17,7 @@
     <span></span>
     <span></span>
    <ul id="menu">
-      <a href="#"><li>Makerplace</li></a>
+      <a href="{% url 'market' %}"><li>Makerplace</li></a>
       <a href="miperfil.html"><li>Perfil</li></a>
       <a href="#"><li>Mis proyectos</li></a>
       <a href="nuevoproyecto.html"><li>Nuevo proyecto</li></a>
@@ -89,7 +89,8 @@
         </span>
       </button>
 
-  <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js'></script><script  src="js/script.js"></script>
+  <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js'></script>
+  <script src="{% static 'core/js/script.js'%}"></script>
 
 </body>
 </html>
