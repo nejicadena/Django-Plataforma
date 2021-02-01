@@ -3,7 +3,7 @@
 <head>
 	<title>Financiamiento colectivo - Making Friends</title>
   {% load static %}
-	<link rel="stylesheet" href="{% url 'css/colectivo_1.css'%}">
+	<link rel="stylesheet" href="{% static 'core/css/colectivo_1.css' %}">   <!-- css agregado m.r.a -->
 	<link rel='stylesheet' href='https://fonts.googleapis.com/css?family=Montserrat:400,700'>
    <script src="js/faqs.js"></script>
 </head>
@@ -22,7 +22,7 @@
       <a href="nuevoproyecto.html"><li>Nuevo proyecto</li></a>
       <a href="#"><li>Soporte</li></a>
       <a href="#"><li>Ajustes</li></a>
-      <a href="#"><li>Cerrar sesión</li></a>
+      <a href="{% url 'logout' %}"><li>Cerras sesión</li></a> <!-- ruta agregada m.r.a -->
       
     </ul>
   </div>

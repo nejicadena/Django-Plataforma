@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <title>Fianciamiento colectivo - Making Friends</title>
-  <link rel="stylesheet" href="css/colectivo_final.css">
+  <link rel="stylesheet" href="{% static 'core/css/colectivo_final.css' %}">   <!-- css agregado m.r.a -->
   <link rel='stylesheet' href='https://fonts.googleapis.com/css?family=Montserrat:400,700'>
 
 </head>
@@ -15,14 +15,14 @@
 <span></span>
     <span></span>
     <span></span>
-<ul id="menu">
+   <ul id="menu">
       <a href="#"><li>Makerplace</li></a>
       <a href="miperfil.html"><li>Perfil</li></a>
       <a href="#"><li>Mis proyectos</li></a>
       <a href="nuevoproyecto.html"><li>Nuevo proyecto</li></a>
       <a href="#"><li>Soporte</li></a>
       <a href="#"><li>Ajustes</li></a>
-      <a href="#"><li>Cerrar sesión</li></a>
+      <a href="{% url 'logout' %}"><li>Cerras sesión</li></a> <!-- ruta agregada m.r.a -->
       
     </ul>
   </div>
