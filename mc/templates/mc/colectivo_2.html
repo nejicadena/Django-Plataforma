@@ -2,6 +2,7 @@
 <html>
 <head>
 	<title>Financiamiento colectivo - Making Friends</title>
+  {% load static %}
 	<link rel="stylesheet" href="{% static 'core/css/colectivo_2.css' %}">   <!-- css agregado m.r.a -->
 	<link rel='stylesheet' href='https://fonts.googleapis.com/css?family=Montserrat:400,700'>
 </head>
@@ -46,14 +47,14 @@ Te compartimos un video con algunos consejos para tener un resultado de calidad>
 
 <div class="product-slider">
      <button class="prev" style="">
-      <a  href="colectivo_1.html">
+      <a  href="{% url 'colectivo_1' %}">
         <span class="icon_prev">
           <svg class="icon-arrow-left"><use xlink:href="#icon-arrow-left"></use></svg>
         </span>
       </button>
 
       <button class="next">
-        <a  href="colectivo_3.html">
+        <a  href="{% url 'colectivo_3' %}">
         <span class="icon">
           <svg class="icon icon-arrow-right"><use xlink:href="#icon-arrow-right"></use></svg></a>
         </span>
