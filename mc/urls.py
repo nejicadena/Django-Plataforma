@@ -1,7 +1,7 @@
 from django.urls import path
-from .views import 
+from .views import colePageView
 
 urlpatterns = [
-    path('ma/', MarketPageView.as_view(), name="market"),
-    path('mc/', MCPageView.as_view(), name="mc")
+    path('colectivo/', colePageView.as_view(), name="colectivo"),
+    # path('mc/', MCPageView.as_view(), name="mc")
 ]
