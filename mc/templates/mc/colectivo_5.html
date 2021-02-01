@@ -26,8 +26,8 @@
     </ul>
   </div>
   <div class="logo_friend">
-  	<a href="MC.html">            
-  	<img clas="logo"src="friends/mc1.png" style="width: 8rem;">
+    <a href="{% url 'mc' %}">             
+      <img src="{% static 'core/img/friends/mc1.png' %}" style="width: 8rem;"> 
   	</a>
   </div>
 </nav>
@@ -47,13 +47,13 @@
     <div class="wrapper2">
       <div class="wrapper1">
         <div class="col1">
-          <img class="ilustr" src="images/package.png"></button> 
+          <img class="ilustr" src="{% static 'core/img/mc/package.png' %}"></button> <!-- ruta agregada m.r.a -->
         </div>
         <div class="col2">
-          <img class="ilustr" src="images/fire-cracker.png">        
+          <img class="ilustr" src="{% static 'core/img/mc/fire-cracker.png' %}">  <!-- ruta agregada m.r.a -->     
         </div>
         <div class="col3">
-          <img class="ilustr" src="images/pizza.png">
+          <img class="ilustr" src="{% static 'core/img/mc/pizza.png' %}"> <!-- ruta agregada m.r.a -->
         </div>
       </div>
     </div>
@@ -65,13 +65,13 @@
       <div class="wrapper1">
         <div class="col1">
           <button onclick="funtion()" style="background-color: transparent; border: none; margin-bottom:none">
-          <img class="ilustr" src="images/llorar.png"></button> 
+          <img class="ilustr" src="{% static 'core/img/mc/llorar.png' %}"></button> <!-- ruta agregada m.r.a -->
         </div>
         <div class="col2">
-          <img class="ilustr" src="images/zapato.png">        
+          <img class="ilustr" src="{% static 'core/img/mc/zapato.png' %}">  <!-- ruta agregada m.r.a -->     
         </div>
         <div class="col3">
-          <img class="ilustr" src="images/carro-deportivo.png">
+          <img class="ilustr" src="{% static 'core/img/mc/carro-deportivo.png' %}"> <!-- ruta agregada m.r.a -->
         </div>
       </div>
     </div>

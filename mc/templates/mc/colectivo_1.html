@@ -5,7 +5,7 @@
   {% load static %}
 	<link rel="stylesheet" href="{% static 'core/css/colectivo_1.css' %}">   <!-- css agregado m.r.a -->
 	<link rel='stylesheet' href='https://fonts.googleapis.com/css?family=Montserrat:400,700'>
-   <script src="js/faqs.js"></script>
+   <script src="{% static 'core/js/faqs.js' %}"></script>
 </head>
 <body>
 
@@ -27,8 +27,8 @@
     </ul>
   </div>
   <div class="logo_friend">
-  	<a href="MC.html">            
-  	<img clas="logo"src="friends/mc1.png" style="width: 8rem;">
+  	<a href="{% url 'mc' %}">     
+      <img src="{% static 'core/img/friends/mc1.png' %}" style="width: 8rem;">       
   	</a>
   </div>
 </nav>
@@ -46,18 +46,18 @@
       <div class="wrapper1">
         <div class="col1">
           <h1>Basado en recompensas</h1>
-          <button onclick="funtionX()" style="background-color: transparent; border: none; margin-bottom:none">
-          <img class="ilustr" src="images/premium.png"></button> 
+          <button onclick="funtionX()" style="background-color: transparent; border: none; margin-bottom:none; cursor:pointer;">
+          <img class="ilustr" src="{% static 'core/img/mc/premium.png' %}"></button> 
         </div>
         <div class="col2">
           <h1>Si comisiones</h1>
-          <button onclick="funtionY()" style="background-color: transparent; border: none; margin-bottom:none">
-          <img class="ilustr" src="images/no-money.png">        
+          <button onclick="funtionY()" style="background-color: transparent; border: none; margin-bottom:none; cursor:pointer; ">
+          <img class="ilustr" src="{% static 'core/img/mc/no-money.png' %}">       
         </div>
         <div class="col3">
           <h1>No generas deudas</h1>
-          <button onclick="funtionZ()" style="background-color: transparent; border: none; margin-bottom:none">
-          <img class="ilustr" src="images/no-debt.png">
+          <button onclick="funtionZ()" style="background-color: transparent; border: none; margin-bottom:none; cursor:pointer;">
+          <img class="ilustr" src="{% static 'core/img/mc/no-debt.png' %}"> 
         </div>
       </div>
     </div>

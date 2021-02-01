@@ -11,9 +11,9 @@
 
 
   <div class="logo_friend">
-    <a href="MC.html">            
-    <img clas="logo"src="friends/mc1.png" style="width: 8rem;">
-    </a>
+    <a href="{% url 'mc' %}">             
+      <img src="{% static 'core/img/friends/mc1.png' %}" style="width: 8rem;"> 
+  	</a>
   </div>
 </nav>
 <body>
@@ -29,7 +29,7 @@
 <input id="slider" name="slider" type="range" value=0>
 <label for="slider">$0</label>
 </section>
-<script  src="js/barr_mc.js"></script>
+<script  src="{% static 'core/js/barr_mc.js' %}"></script> 
 
 <div class="ejercicio">¿Qué tengo que hacer?</div>
 
