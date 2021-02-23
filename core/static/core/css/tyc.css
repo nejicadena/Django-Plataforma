@@ -5,6 +5,15 @@ body{
 	margin-right: 20rem;
 }
 
+header {
+	background: #1a1d25;
+	padding: 10px 0;
+	background-color: #000000;
+}
+header .logo {
+	max-width: 90px;
+}
+
 .titulo{
 	text-align: center;
 	color: #000000;
