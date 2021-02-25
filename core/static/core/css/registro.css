@@ -1,3 +1,62 @@
+/*Inicio Fonts*/
+@font-face{
+  font-family: MontserratLight;
+  src: url(../fonts/Montserrat/Montserrat-Light.ttf);
+}
+
+/*Final Fonts*/
+/*----------------------------------------------------------------------------------------------------*/
+/*Inicio Menu*/
+#header{
+  width: 100%;
+  height: auto;
+  padding-bottom: 5px;
+  background-color: black;
+  display: flex;
+}
+#imagen{
+  width: 77%;
+  height: auto;
+}
+#imagen #logo{
+  width: 80px;
+  height: 70px;
+  margin-left: 40px;
+  display: block;
+}
+#imagen #logo img{
+  width: 120%;
+  height: 100%;
+}
+
+#menu{
+  display: flex;
+  width: 20%;
+  height: auto;
+  
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+#menu .contenedores{
+  width: 25%;
+  height: 100%;
+  font-family: MontserratLight;
+  text-align: center;
+}
+#menu .contenedores a{
+  font-size: 12px;
+  letter-spacing: 2px;
+  line-height: 60px;
+  color: white;
+}
+.contenedores a{
+  text-decoration: none;
+}
+#menu .contenedores a:hover{
+  color: #fb8b23;
+}
+/*Final Menu*/
+/*----------------------------------------------------------------------------------------------------*/
 @import url(https://fonts.googleapis.com/css?family=Roboto:400,300,100,500);
 body,
 html {
@@ -207,3 +266,70 @@ button:focus {
     height: 100%;
   }
 }
+/*---------------------------------------------------------------------------------------------------------------*/
+/*Inicio footer*/
+#piePagina{
+  width: 100%;
+  height: auto;
+  padding-top: 30px;
+  background-color: black;
+}
+/*=========================================*/
+#menu_footer{
+  display: flex;
+  width: 25%;
+  height: auto;
+  border-bottom: 1px solid white;
+  margin: auto;
+}
+#menu_footer div{
+  width: 15%;
+  height: auto;
+  padding-top: 5px;
+  padding-bottom: 10px;
+  margin: auto;
+  text-align: center;
+  font-size: 15px;
+  font-family: MontserratLight;
+}
+#menu_footer div a{
+  color: #DE2276;
+  text-decoration: none;
+}
+#menu_footer div a:hover{
+  color:white;
+  text-decoration: none;
+}
+/*=========================================*/
+#text_footer{
+  width: 40%;
+  height: auto;
+  margin: auto;
+  margin-top: 15px;
+  text-align: center;
+  font-size: 15px;
+  color: white;
+}
+#text_footer p{
+  line-height: 40px;
+}
+/*=========================================*/
+#copy{
+  width: 100%;
+  height: 50px;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  background-color: #323232;
+  text-align: center;
+  color: white;
+  line-height: 40px;
+}
+#copy p a{
+ color: #DE2276;
+ text-decoration: none;
+}
+#copy p a:hover{
+  color: white;
+ }
+/*Final footer*/
+/*---------------------------------------------------------------------------------------------------------------*/

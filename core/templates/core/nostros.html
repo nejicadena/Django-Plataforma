@@ -7,21 +7,51 @@
 
 </head>
 <body>
+<!-- Inicio Menu -->
+  <div id="header">
 
+    <div id="imagen">
+      <div id="logo">
+        <a href="">
+          <img src="{% static 'core/img/Logo B1.png'%}" alt="#">
+        </a>
+      </div>
+    </div>
+
+    <div id="menu">
+      <div class="contenedores">
+        <a href="{% url 'nosotros' %}">Nosotros</a>
+      </div>
+
+      <div class="contenedores"> 
+        <a href="{% url 'nosotros' %}">Makers</a>
+      </div>
+
+      <div class="contenedores">
+        <a href="{% url 'nosotros' %}">Friends</a>
+      </div>
+
+      <div class="contenedores">
+        <a href="{% url 'nosotros' %}">Contacto</a>
+      </div>
+    </div>
+
+  </div>
+<!-- Fin Menu -->
    <div class="nosotros" style="background: url(images/barras.jpg);">
    
-   <span>¿Qué hacemos en</span> 
-   <span>Making Friends?</span>
-  
-   
-</div>
-<section>
-  <h1>Buscamos proporcionar herramientas y conocimientos para crear con libertad y enfoque, a través de una iniciativa multidisciplinar accesible para todos los  que quieren iniciar un proyecto. <br> <br>
+    <span>¿Qué hacemos en</span> 
+    <span>Making Friends?</span>
 
-Somos una comunidad donde cualquiera pueden llevar a cabo sus sueños sin importar si tienen recursos o no.</h1>
+  </div>
 
-<h2>EFICIENTAMOS EL PROCESO DE CONECTAR RECURSOS CON LOS QUE LOS NECESITAN </h2>
-</section>
+  <section>
+      <h1>Buscamos proporcionar herramientas y conocimientos para crear con libertad y enfoque, a través de una iniciativa multidisciplinar accesible para todos los  que quieren iniciar un proyecto. <br> <br>
+
+      Somos una comunidad donde cualquiera pueden llevar a cabo sus sueños sin importar si tienen recursos o no.</h1>
+
+      <h2>EFICIENTAMOS EL PROCESO DE CONECTAR RECURSOS CON LOS QUE LOS NECESITAN </h2>
+  </section>
 
 <div class= "descubre" style="background-color:#000000"> Descubre como participar </div>
 <div class="plit-screen-wrap flex">
@@ -230,13 +260,15 @@ Chilango gamer, viajero biker, músico autodidacta y apasionado del baile. Piens
 <footer class="indigo">
 
       <div class="foot">
-  <ul>
-    <li><a href="nosotros.html">Nosotros</a></li>
-    <li><a href="">Makers</a></li>
-    <li><a href="">Friends</a></li>
-    <li><a href="">Contacto</a></li>
-  </ul>
-</div>
+
+        <ul>
+          <li><a href="nosotros.html">Nosotros</a></li>
+          <li><a href="">Makers</a></li>
+          <li><a href="">Friends</a></li>
+          <li><a href="">Contacto</a></li>
+        </ul>
+        
+      </div>
        <hr>
 
         <p class="foot2">APOSTAMOS POR LOS SUEÑOS DE LOS QUE CREEN EN SI MISMOS

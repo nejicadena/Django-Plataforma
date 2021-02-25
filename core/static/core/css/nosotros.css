@@ -1,8 +1,62 @@
+/*Inicio Fonts*/
+@font-face{
+  font-family: MontserratLight;
+  src: url(../fonts/Montserrat/Montserrat-Light.ttf);
+}
+
+/*Fin Fonts*/
+/*Inicio Menu*/
+#header{
+  width: 100%;
+  height: auto;
+  padding-bottom: 5px;
+  background-color: black;
+  display: flex;
+}
+#imagen{
+  width: 77%;
+  height: auto;
+}
+#imagen #logo{
+  width: 80px;
+  height: 70px;
+  margin-left: 40px;
+  display: block;
+}
+#imagen #logo img{
+  width: 120%;
+  height: 100%;
+}
+
+#menu{
+  display: flex;
+  width: 20%;
+  height: auto;
+  
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+#menu .contenedores{
+  width: 25%;
+  height: 100%;
+  font-family: MontserratLight;
+  text-align: center;
+}
+#menu .contenedores a{
+  font-size: 12px;
+  letter-spacing: 2px;
+  line-height: 60px;
+  color: white;
+}
+#menu .contenedores a:hover{
+  color: #fb8b23;
+}
+
+/*Final Menu*/
 body{
     font-family: montserrat;
     margin: 0rem;
     }
-    
     .nosotros {
      
       text-align: center;

@@ -17,6 +17,37 @@
     <!-- script
     ================================================== -->
     <script src="{% static 'core/js/modernizr.js' %}%"></script>
+<!-- Inicio Menu -->
+<div id="header">
+
+  <div id="imagen">
+    <div id="logo">
+      <a href="">
+        <img src="{% static 'core/img/Logo B1.png'%}" alt="#">
+      </a>
+    </div>
+  </div>
+
+  <div id="menu">
+    <div class="contenedores">
+      <a href="{% url 'nosotros' %}">Nosotros</a>
+    </div>
+
+    <div class="contenedores"> 
+      <a href="{% url 'nosotros' %}">Makers</a>
+    </div>
+
+    <div class="contenedores">
+      <a href="{% url 'nosotros' %}">Friends</a>
+    </div>
+
+    <div class="contenedores">
+      <a href="{% url 'nosotros' %}">Contacto</a>
+    </div>
+  </div>
+
+</div>
+<!-- Fin Menu -->
 
 <div class='bold-line'></div>
 <div class='container'>
@@ -42,5 +73,39 @@
     </div>
   </div>
 </div>
+<!-- ------------------------------------------------------------------------------------------------------ -->
+<!-- Inicio Pie de pagina -->
+<div id="piePagina">
 
+  <div id="menu_footer">
+
+    <div>
+      <a href="#">Nosotros</a>
+    </div>
+    <div>
+      <a href="#">Makers</a>
+    </div>
+    <div>
+      <a href="#">Friends</a>
+    </div>
+    <div>
+      <a href="#">Contacto</a>
+    </div>
+    
+  </div>
+  
+  <div id="text_footer">
+    <p>
+      APOSTAMOS POR LOS SUEÑOS DE LOS QUE CREEN EN SI MISMOS COMPARTIENDO 
+      <br>
+      CONOCIMIENTO Y HERRAMIENTAS PARA DAR VIDA A SUS IDEAS
+    </p>
+  </div>
+  <div id="copy">
+    <p>© 2020 Copyright: <a href="#">LINADI</a></p>
+  </div>
+
+</div>
+<!-- Fin Pie de pagina -->
+<!-- ------------------------------------------------------------------------------------------------------ -->
 {% endblock %}
