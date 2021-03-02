@@ -1,5 +1,17 @@
-@import url('https://fonts.googleapis.com/css?family=Muli&display=swap');
-
+/*Inicio Fonts*/
+@font-face{
+	font-family: MontserratBold;
+	src: url(../fonts/Montserrat/Montserrat-bold.ttf);
+  }
+@font-face{
+	font-family: Montserrat;
+	src: url(../fonts/Montserrat/Montserrat.ttf);
+  }
+/*Final Fonts*/
+body{
+	margin: 0;
+	padding: 0;
+}
 * {
 	box-sizing: border-box;
 }
