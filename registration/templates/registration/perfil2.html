@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+        <meta charset='utf-8'>
+        <meta name="viewport" content="width=device-width, user-scalable=no">
+        <link rel="stylesheet" href="css/perfil2.css">
+        <link rel="stylesheet" href="css/responsive.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
+        <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.0.7/css/swiper.min.css'>
+        <title>Mi Perfil - Makign Friends</title>
+        <link rel="shortcut icon" href="imagenes/supertux.png" type="image/x-icon">
+</head>
+<body>
+
+  <div id="sidebar-menu">
+    <div id="toggleMenu">
+        <div class="list"><img src="images/lista.png"></div>    
+        <div class="thumbs"><img src="images/delete.png" ></div>
+    </div> 
+    <ul>
+    	<a class="" href="#"><li class="PERFIL" style="background-image: url(images/avatar.png)"><span>PERFIL</span></li></a>
+      <a href="#"><li class="USERS" style="background-image: url(images/history.png)"><span>HISTORIAL</span></li></a>
+      <a href="marketplace.html"><li class="PRIORITY" style="background-image: url(images/find.png)"><span>DESCUBRIR</span></li></a>
+      <a href="marketplace.html"><li class="COLLECTIONS" style="background-image: url(images/question.png)"><span>SOPORTE</span></li></a>
+      <a href="marketplace.html"><li class="STATS" style="background-image: url(images/settings.png)"><span>AJUSTES</span></li></a>
+      <a href="#"><li class="SETTINGS" style="background-image: url(images/logout.png)"><span>CERRAR SESIÓN</span></li></a>        
+    </ul>
+</div>
+
+    <div class="portada" style="background-image: url(images/pref/pexels-anni-roenkae-3109816.jpg"></div>
+    <div class="profile">
+        <img class="profile-photo" src="images/equipo/mogu.png">
+      <h1>Juan Mogu</h1>
+      <p>Co-fundador y Director ejecutivo <br> de Making Friends</p>
+      </div>
+
+      <div class="flexslider-controls">
+        <ol class="flex-control-nav">
+            <li>Editar perfil</li>
+            <li>Cuenta</li>
+            <li>Historial de cursos</li>
+            <li>Explorar</li>
+        </ol>
+    </div>
+
+    <div class="flexslider">
+      <ul class="slides">
+          <li>
+            <div class="perfil" width="800" height="504">
+              <div id="title">
+                <h2>Editar mi perfil</h2>    
+              </div>
+              <div class="form col-md-12">
+                  <form>		
+                    <h3>Nombre(s)</h3>
+                    <input type="text" class="col-md-6" >
+                    <h3>Apellidos</h3>
+                    <input type="text" class="col-md-6" >
+                    <h3>Fecha de nacimiento</h3>
+                    <input type="date" class="col-md-3" >
+                    <h3>Género</h3>
+                    <input type="checkbox" class="gen"  name="hm" value="h" required> Hombre
+                    <input type="checkbox"  name="hm" value="m" required> Mujer
+                    <input type="text1" class="otro" placeholder="Otro">
+                    <h3>Descripción</h3>
+                    <input type="text" class="col-md-6" ><br>
+                    <input type="submit" value="Submit">		
+                  </form>
+                </div>
+              </div>
+          </li>
+          <li>
+            <div class="perfil" width="800" height="504">
+              <div id="title">
+                <h2>Información de inicio de sesión</h2>    
+              </div>
+              <div class="cuenta">
+                  <form>		
+                    <h3>Correo electronico</h3>
+                    <input type="text" class="col-md-6" >
+                    <h3>Contraseña</h3>
+                    <h4>La contraseña debe contener al menos seis caracteres</h4>
+                    <input type="text" class="col-md-6" >
+                    <h3>Confirma tu contraseña</h3>
+                    <input type="text" class="col-md-6" >
+          </li>
+          <li>
+            <div class="perfil" width="800" height="504">
+              <div id="title">
+                <h2>Visto recientemente</h2>    
+              </div>
+              <div class="historial">
+            <div class="wrapper">
+              <div class="wrapper_inner">
+                <!-- Gallery -->
+                <section class="gallery">
+                  <!-- Gallery  item -->
+                  <div class="gallery_item">
+                    <!-- Gallery  item preview -->
+                    <span class="gallery_item_preview">
+                      <a href="#" data-js="1">
+                      
+                        
+                        <img src="https://25.media.tumblr.com/1adc4029ef3a31124f222add70fa3553/tumblr_n2k1499dIp1st5lhmo1_1280.jpg" alt="" /><span>
+                        <h3>Exmaple photo</h3>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing
+                          elit.</p>
+            
+                        </span>
+                      </a>
+          </li>
+          <li>
+            <div class="perfil" width="800" height="504">
+              <div id="title">
+                <h2>Friends recientes</h2>    
+              </div>
+              <div class="explorar">
+                <img src="images/friends/mc1.png" width="150" height="70">
+                <img src="images/friends/logoVexi.png" width="170" height="90">
+                <div id="title">
+                  <h2 class="exp-2">Descubre más</h2>    
+                  <img src="images/friends/medi.png" width="150" height="70">
+                  <img src="images/friends/descarga.png" width="170" height="100">
+
+                </div>
+          </li>
+      </ul>
+  </div>
+<!-- partial -->
+<script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js'></script>
+<script src='https://rawgithub.com/woothemes/FlexSlider/master/jquery.flexslider-min.js'></script>
+<script  src="js/perfil.js"></script>
+
+<!-- partial test -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+<script src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/245657/jquery-ui.min.js"></script>
+<!-- partial -->
+  <script  src="js/nav.js"></script>
+
+
+
+</body>
+</html>
